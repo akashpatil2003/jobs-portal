@@ -1,19 +1,16 @@
-import React from 'react'
-import Hero from '../components/Hero'
-import HomeCards from '../components/HomeCards'
-import Card from '../components/Card'
-import Joblistings from '../components/Joblistings'
-import ViewAllJobs from '../components/ViewAllJobs'
-function HomePage() {
+import Hero from '../components/Hero';
+import HomeCards from '../components/HomeCards';
+import JobListings from '../components/JobListings';
+import ViewAllJobs from '../components/ViewAllJobs';
+
+const HomePage = () => {
   return (
     <>
-        <Hero />
-        <HomeCards />
-        <Card />
-        <Joblistings  isHome='true'/>
-        <ViewAllJobs />
+      <Hero />
+      <HomeCards />
+      <JobListings isHome={true} />
+      <ViewAllJobs />
     </>
-  )
-}
-
-export default HomePage
+  );
+};
+export default HomePage;
